@@ -1,0 +1,9 @@
+nums = [5,4,3,2,1]
+n = len(nums)
+count = 0
+for n in range(len(nums)):
+    for i in range(n + 1,len(nums)):
+        if nums[n] > nums[i]:
+            count += 1
+            
+print(count)
